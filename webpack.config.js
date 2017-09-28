@@ -1,10 +1,12 @@
 const path = require('path')
 
 const config = {
-  entry: './src/index.js',
+  entry: {
+    app: './src/index.js',
+    print: './src/print.js'
+  },
   output: {
-    filename: 'bundle.js',
-    // path: __dirname + '/dist'
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   }
 }
