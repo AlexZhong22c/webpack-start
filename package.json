@@ -1,0 +1,19 @@
+{
+  "name": "webpack-start",
+  "version": "0.0.1",
+  "description": "for learning webpack",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "az22c <az22c@qq.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
