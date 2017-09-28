@@ -5,7 +5,10 @@
   "dependencies": {
     "lodash": "^4.17.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2"
+  },
   "scripts": {
     "build": "webpack"
   },
