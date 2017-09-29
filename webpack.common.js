@@ -15,6 +15,7 @@ const config = {
     new HtmlWebpackPlugin({
       title: 'Caching'
     }),
+    new webpack.HashedModuleIdsPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
     }),
