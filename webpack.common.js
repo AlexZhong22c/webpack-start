@@ -9,6 +9,14 @@ const config = {
   output: {
     filename: 'webpack-numbers.js',
     path: path.resolve(__dirname, 'dist')
+  },
+  externals: {
+    lodash: {
+      commonjs: 'lodash',
+      commonjs2: 'lodash',
+      amd: 'lodash',
+      root: '_'
+    }
   }
 }
 module.exports = config
