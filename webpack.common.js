@@ -1,20 +1,18 @@
 const path = require('path')
 
 const config = {
-  entry: {
-    app: './src/index.js'
-  },
-  plugins: [
-  ],
+  entry: './src/index.js',
   output: {
     filename: 'webpack-numbers.js',
     path: path.resolve(__dirname, 'dist')
   },
-  externals: [
-    'library/one',
-    'library/two',
-    // Everything that starts with "library/"
-    /^library\/.+$/
-  ]
+  externals: {
+    lodash: {
+      commonjs: 'lodash',
+      commonjs2: 'lodash',
+      amd: 'lodash',
+      root: '_'
+    }
+  }
 }
 module.exports = config
