@@ -1,7 +1,6 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = {
   entry: {
@@ -9,9 +8,8 @@ const config = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new UglifyJSPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Tree Shaking'
+      title: 'Production Env'
     })
   ],
   output: {
