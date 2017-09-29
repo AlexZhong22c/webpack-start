@@ -1,30 +1,13 @@
 const path = require('path')
-const webpack = require('webpack')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = {
   entry: {
-    app: './src/index.js',
-    vendor: [
-      'lodash'
-    ]
+    app: './src/index.js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({
-      title: 'Caching'
-    }),
-    new webpack.HashedModuleIdsPlugin(),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor'
-    }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'runtime'
-    })
   ],
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: 'webpack-numbers.js',
     path: path.resolve(__dirname, 'dist')
   }
 }
