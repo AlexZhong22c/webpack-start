@@ -4,13 +4,12 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const config = {
   entry: {
-    app: './src/index.js',
-    print: './src/print.js'
+    app: './src/index.js'
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Output Management'
+      title: 'Tree Shaking'
     })
   ],
   output: {
